@@ -11,14 +11,16 @@ import {
 import "./Contact.css";
 import { useForm } from "react-hook-form";
 import ContactForm from "./ContactForm";
+import style from "./ScrolllBar.module.css";
+import "./ScrolllBar.module.css";
 
 const Contact = () => {
   return (
     <>
-      <section className="container mx-auto  my-16 h-screen overflow-y-scroll my-auto">
-        <div className="max-w-[1300px] bg-[#d3d0df] rounded-3xl mx-auto">
+      <section className="container mx-auto  h-screen overflow-auto contactScrollBar">
+        <div className="max-w-[1300px] bg-[#d3d0df] rounded-3xl mx-auto my-10">
           <div className="grid  lg:grid-cols-3 grid-cols-1">
-            <div className=" bg-[#54389e] min-w-[320px] contact-form py-20  relative rounded-l-lg px-2 md:px-10">
+            <div className=" bg-[#54389e] min-w-[320px] contact-form py-20  relative rounded-t-lg lg:rounded-l-lg lg:rounded-r-none px-2 md:px-10">
               <div>
                 <h4 className="text-xl font-bold text-secondary">Get in touch</h4>
                 <p className="py-2">
@@ -60,7 +62,9 @@ const Contact = () => {
                 <FaYoutube className="text-2xl text-secondary" />
               </div>
             </div>
-            <div className="bg-secondary flex justify-center items-center  contact-form py-20  rounded-r-lg lg:col-span-2">
+            <div
+              className={`bg-secondary flex justify-center items-center  contact-form py-20 rounded-b-lg lg:rounded-r-lg lg:rounded-l-none  lg:col-span-2 `}
+            >
               <ContactForm />
             </div>
           </div>
