@@ -1,0 +1,20 @@
+[
+    {
+      "id": "1",
+      "name": "T-COLLECTION",
+      "img": "https://i.ibb.co/6N1PVR2/portfolio3.jpg",
+      "brand": "A Independent Service Provider Website",
+      "liveSite": "https://t-collection-eaf74.firebaseapp.com/",
+      "description":
+        "This is a full-stack responsive react project where dealers can buy car tyres. Users can go to the dashboard and pay for or cancel their orders. Only admins see all orders and their payment status in the dashboard. They can also ship paid orders. Admins can make normal users admin and add or delete products."
+    },
+    {
+      "id": "2",
+      "name": "CARLE HOUSE",
+      "img": "https://i.ibb.co/6N1PVR2/portfolio3.jpg",
+      "brand": "A Inventory Manager Website",
+      "liveSite": "https://carle-warehouse.firebaseapp.com/",
+      "description":
+        "This is a car warehouse-related website. Here traders or general users can buy cars. They can order each car individually. Admins can also add cars. Admins can see all the car products page. Admin can delete the product at will."
+    }
+  ]
