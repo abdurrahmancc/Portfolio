@@ -15,7 +15,7 @@ import ContactForm from "./ContactForm";
 const Contact = () => {
   return (
     <>
-      <section className="container mx-auto  my-16 h-screen">
+      <section className="container mx-auto  my-16 h-screen overflow-y-scroll my-auto">
         <div className="max-w-[1300px] bg-[#d3d0df] rounded-3xl mx-auto">
           <div className="grid  lg:grid-cols-3 grid-cols-1">
             <div className=" bg-[#54389e] min-w-[320px] contact-form py-20  relative rounded-l-lg px-2 md:px-10">

@@ -6,6 +6,25 @@ const Portfolio = () => {
   const projects = [
     {
       id: "1",
+      name: "AWS",
+      img: "https://i.ibb.co/cvBLk7K/aws.jpg",
+      brand: "A Independent Service Provider Website",
+      liveSite: "https://aws-ac1fd.firebaseapp.com/",
+      client: "https://github.com/abdurrahmancc/aws",
+      server: "https://github.com/abdurrahmancc/aws-server",
+      exists: [
+        "Items of different categories are displayed in the form of grid columns on the home page.",
+        "It has a dashboard for admin. Where admin can add different products. Also can control everything.",
+        "The website is responsive for mobile, tab, and PC.",
+        "Implemented Login and SignUp forms to count users.",
+      ],
+      technology:
+        "React, Node, firebase(authentication), MongoDB, Express, JWT, Tailwind CSS, Daisyui, Axios, React Query, etc.",
+      description:
+        "This is a full-stack responsive AWS project where users can purchase any product. Which is made with React and tailwind CSS. Items of different categories are displayed in the form of grid columns on the home page. The website is responsive for mobile, tab, and PC. Implemented Login and SignUp forms to count users.",
+    },
+    {
+      id: "2",
       name: "T-COLLECTION",
       img: "https://i.ibb.co/vBQT6hP/tcollection.jpg",
       brand: "A Independent Service Provider Website",
@@ -16,7 +35,7 @@ const Portfolio = () => {
         "This is a full-stack responsive react project where dealers can buy car tyres. Users can go to the dashboard and pay for or cancel their orders. Only admins see all orders and their payment status in the dashboard. They can also ship paid orders. Admins can make normal users admin and add or delete products.",
     },
     {
-      id: "2",
+      id: "3",
       name: "CARLE HOUSE",
       img: "https://i.ibb.co/6N1PVR2/portfolio3.jpg",
       brand: "A Inventory Manager Website",
@@ -27,7 +46,7 @@ const Portfolio = () => {
         "This is a car warehouse-related website. Here traders or general users can buy cars. They can order each car individually. Admins can also add cars. Admins can see all the car products page. Admin can delete the product at will.",
     },
     {
-      id: "3",
+      id: "4",
       name: "Doctors Portal",
       img: "https://i.ibb.co/6N1PVR2/portfolio3.jpg",
       brand: "A Inventory Manager Website",

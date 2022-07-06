@@ -9,6 +9,25 @@ const PortfolioCardDetails = () => {
   const projects = [
     {
       id: "1",
+      name: "AWS",
+      img: "https://i.ibb.co/cvBLk7K/aws.jpg",
+      brand: "A Independent Service Provider Website",
+      liveSite: "https://aws-ac1fd.firebaseapp.com/",
+      client: "https://github.com/abdurrahmancc/aws",
+      server: "https://github.com/abdurrahmancc/aws-server",
+      exists: [
+        "Items of different categories are displayed in the form of grid columns on the home page.",
+        "It has a dashboard for admin. Where admin can add different products. Also can control everything.",
+        "The website is responsive for mobile, tab, and PC.",
+        "Implemented Login and SignUp forms to count users.",
+      ],
+      technology:
+        "React, Node, firebase(authentication), MongoDB, Express, JWT, Tailwind CSS, Daisyui, Axios, React Query, etc.",
+      description:
+        "This is a full-stack responsive AWS project where users can purchase any product. Which is made with React and tailwind CSS. Items of different categories are displayed in the form of grid columns on the home page. The website is responsive for mobile, tab, and PC. Implemented Login and SignUp forms to count users.",
+    },
+    {
+      id: "2",
       name: "T-COLLECTION",
       img: "https://i.ibb.co/vBQT6hP/tcollection.jpg",
       brand: "A Independent Service Provider Website",
@@ -28,7 +47,7 @@ const PortfolioCardDetails = () => {
         "This is a full-stack responsive react project where dealers can buy car tyres. Users can go to the dashboard and pay for or cancel their orders. Only admins see all orders and their payment status in the dashboard. They can also ship paid orders. Admins can make normal users admin and add or delete products.",
     },
     {
-      id: "2",
+      id: "3",
       name: "CARLE HOUSE",
       img: "https://i.ibb.co/YTYXqz2/Untitled-2.jpg",
       brand: "A Inventory Manager Website",
@@ -48,7 +67,7 @@ const PortfolioCardDetails = () => {
         "This is a car warehouse-related website. Here traders or general users can buy cars. They can order each car individually. Admins can also add cars. Admins can see all the car products page. Admin can delete the product at will.",
     },
     {
-      id: "3",
+      id: "4",
       name: "Doctors Portal",
       img: "https://i.ibb.co/6N1PVR2/portfolio3.jpg",
       brand: "A Inventory Manager Website",
@@ -83,48 +102,61 @@ const PortfolioCardDetails = () => {
                 <div className={`${id != 1 && "hidden"}`}>
                   <div className="">
                     <h5 className="text-lg font-bold uppercase pb-2 text-center">home page</h5>
-                    <div className="mx-w-[400px] h-[200px] object-cover bg-no-repeat  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/vBQT6hP/tcollection.jpg')] bg-black ease-in-out  duration-[2s]"></div>
+                    <div className="w-[400px] mx-auto h-[200px] object-cover bg-no-repeat  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/cvBLk7K/aws.jpg')] bg-black ease-in-out  duration-[2s]"></div>
                   </div>
                   <div className="my-10">
                     <h5 className="text-lg font-bold uppercase pb-2 text-center">login page</h5>
-                    <div className="mx-w-[400px] h-[200px] bg-no-repeat   object-cover  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/SwFRbsK/loginpage.jpg')] bg-black ease-in-out  duration-[2s]"></div>
+                    <div className="w-[400px] mx-auto h-[200px] bg-no-repeat   object-cover  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/dcRrRvj/aws-login.jpg')] bg-black ease-in-out  duration-[2s]"></div>
                   </div>
                   <div className="">
                     <h5 className="text-lg font-bold uppercase pb-2 text-center">dashboard</h5>
-                    <div className="mx-w-[400px] h-[200px] bg-no-repeat   object-cover  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/27pLmTV/dashboard.jpg')] bg-black ease-in-out  duration-[2s]"></div>
+                    <div className="w-[400px] mx-auto h-[200px] bg-no-repeat   object-cover  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/TMn1P26/jws-dashboard.jpg')] bg-black ease-in-out  duration-[2s]"></div>
                   </div>
                 </div>
-
                 <div className={`${id != 2 && "hidden"}`}>
-                  <div>
+                  <div className="">
                     <h5 className="text-lg font-bold uppercase pb-2 text-center">home page</h5>
-                    <div className="mx-w-[400px] h-[200px] object-cover  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/YTYXqz2/Untitled-2.jpg')] bg-black ease-in-out  duration-[2s]"></div>
+                    <div className="w-[400px] mx-auto  h-[200px] object-cover bg-no-repeat  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/vBQT6hP/tcollection.jpg')] bg-black ease-in-out  duration-[2s]"></div>
                   </div>
                   <div className="my-10">
-                    <h5 className="text-lg font-bold uppercase pb-2 text-center">dashboard page</h5>
-                    <div className="mx-w-[400px] h-[200px] object-cover  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/Nmps6Bg/Untitled-2fsf.jpg')] bg-no-repeat bg-black ease-in-out  duration-[2s]"></div>
+                    <h5 className="text-lg font-bold uppercase pb-2 text-center">login page</h5>
+                    <div className="w-[400px] mx-auto  h-[200px] bg-no-repeat   object-cover  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/SwFRbsK/loginpage.jpg')] bg-black ease-in-out  duration-[2s]"></div>
                   </div>
                   <div className="">
-                    <h5 className="text-lg font-bold uppercase pb-2 text-center">login page</h5>
-                    <div className="mx-w-[400px] h-[200px] object-cover  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/375fxDy/Untitled-2das.jpg')] bg-black ease-in-out  duration-[2s]"></div>
+                    <h5 className="text-lg font-bold uppercase pb-2 text-center">dashboard</h5>
+                    <div className="w-[400px] mx-auto  h-[200px] bg-no-repeat   object-cover  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/27pLmTV/dashboard.jpg')] bg-black ease-in-out  duration-[2s]"></div>
                   </div>
                 </div>
                 <div className={`${id != 3 && "hidden"}`}>
                   <div>
                     <h5 className="text-lg font-bold uppercase pb-2 text-center">home page</h5>
-                    <div className="mx-w-[400px] h-[200px] object-cover  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/6N1PVR2/portfolio3.jpg')] bg-black ease-in-out  duration-[2s]"></div>
+                    <div className="w-[400px] mx-auto  h-[200px] object-cover  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/YTYXqz2/Untitled-2.jpg')] bg-black ease-in-out  duration-[2s]"></div>
+                  </div>
+                  <div className="my-10">
+                    <h5 className="text-lg font-bold uppercase pb-2 text-center">dashboard page</h5>
+                    <div className="w-[400px] mx-auto  h-[200px] object-cover  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/Nmps6Bg/Untitled-2fsf.jpg')] bg-no-repeat bg-black ease-in-out  duration-[2s]"></div>
+                  </div>
+                  <div className="">
+                    <h5 className="text-lg font-bold uppercase pb-2 text-center">login page</h5>
+                    <div className="w-[400px] mx-auto  h-[200px] object-cover  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/375fxDy/Untitled-2das.jpg')] bg-black ease-in-out  duration-[2s]"></div>
+                  </div>
+                </div>
+                <div className={`${id != 4 && "hidden"}`}>
+                  <div>
+                    <h5 className="text-lg font-bold uppercase pb-2 text-center">home page</h5>
+                    <div className="w-[400px] mx-auto  h-[200px] object-cover  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/6N1PVR2/portfolio3.jpg')] bg-black ease-in-out  duration-[2s]"></div>
                   </div>
                   <div className="my-10">
                     <h5 className="text-lg font-bold uppercase pb-2 text-center">
                       Appointment page
                     </h5>
-                    <div className="mx-w-[400px] h-[200px] object-cover  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/F0sr1YN/appointmentpage.jpg')] bg-black ease-in-out  duration-[2s]"></div>
+                    <div className="w-[400px] mx-auto  h-[200px] object-cover  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/F0sr1YN/appointmentpage.jpg')] bg-black ease-in-out  duration-[2s]"></div>
                   </div>
                   <div className="">
                     <h5 className="text-lg font-bold uppercase pb-2 text-center">
                       Appointment page
                     </h5>
-                    <div className="mx-w-[400px] h-[200px] object-cover  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/d2HY4gw/doctordashboard.jpg')] bg-black ease-in-out  duration-[2s]"></div>
+                    <div className="w-[400px] mx-auto  h-[200px] object-cover  bg-top hover:bg-bottom bg-[url('https://i.ibb.co/d2HY4gw/doctordashboard.jpg')] bg-black ease-in-out  duration-[2s]"></div>
                   </div>
                 </div>
               </div>
