@@ -2,9 +2,15 @@ import React from "react";
 
 const Blog = () => {
   return (
-    <section className="container mx-auto mt-20 h-screen">
-      <div className="max-w-[1300px] h-[calc(100vh-200px)] flex justify-center items-center my-auto bg-accent rounded-3xl mx-auto">
-        <h1 className="text-5xl text-center text-primary">coming soon</h1>
+    <section id="home-container" className="w-full mx-auto p-10 h-screen">
+      <div className="w-full h-full bg-accent rounded-3xl mx-auto">
+        <div className="hero h-full bg-accent rounded-3xl">
+          <div className="hero-content flex-col lg:flex-col ">
+            <div className="h-[calc(100vh-200px)] flex justify-center items-center">
+              <h1 className="text-5xl text-center text-primary">coming soon</h1>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   );

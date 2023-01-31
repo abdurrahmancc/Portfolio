@@ -1,74 +1,19 @@
-import axios from "axios";
-import React, { useEffect } from "react";
+import React from "react";
+import portfolios from "../../fakeData/portfolios";
 import ProjectCard from "./ProjectCard";
 
 const Portfolio = () => {
-  const projects = [
-    {
-      id: "1",
-      name: "AWS",
-      img: "https://i.ibb.co/cvBLk7K/aws.jpg",
-      brand: "A Independent Service Provider Website",
-      liveSite: "https://aws-ac1fd.firebaseapp.com/",
-      client: "https://github.com/abdurrahmancc/aws",
-      server: "https://github.com/abdurrahmancc/aws-server",
-      exists: [
-        "Items of different categories are displayed in the form of grid columns on the home page.",
-        "It has a dashboard for admin. Where admin can add different products. Also can control everything.",
-        "The website is responsive for mobile, tab, and PC.",
-        "Implemented Login and SignUp forms to count users.",
-      ],
-      technology:
-        "React, Node, firebase(authentication), MongoDB, Express, JWT, Tailwind CSS, Daisyui, Axios, React Query, etc.",
-      description:
-        "This is a full-stack responsive AWS project where users can purchase any product. Which is made with React and tailwind CSS. Items of different categories are displayed in the form of grid columns on the home page. The website is responsive for mobile, tab, and PC. Implemented Login and SignUp forms to count users.",
-    },
-    {
-      id: "2",
-      name: "T-COLLECTION",
-      img: "https://i.ibb.co/vBQT6hP/tcollection.jpg",
-      brand: "A Independent Service Provider Website",
-      liveSite: "https://t-collection-eaf74.firebaseapp.com/",
-      technology:
-        "html, css, JS, React, Node.js, Stripe, MongoDB, Firebase, Tailwind, JWT Token,Express.js ",
-      description:
-        "This is a full-stack responsive react project where dealers can buy car tyres. Users can go to the dashboard and pay for or cancel their orders. Only admins see all orders and their payment status in the dashboard. They can also ship paid orders. Admins can make normal users admin and add or delete products.",
-    },
-    {
-      id: "3",
-      name: "CARLE HOUSE",
-      img: "https://i.ibb.co/6N1PVR2/portfolio3.jpg",
-      brand: "A Inventory Manager Website",
-      liveSite: "https://carle-warehouse.firebaseapp.com/",
-      technology:
-        "html, css, JS, React, Node.js, Stripe, MongoDB, Firebase, Tailwind, JWT Token,Express.js ",
-      description:
-        "This is a car warehouse-related website. Here traders or general users can buy cars. They can order each car individually. Admins can also add cars. Admins can see all the car products page. Admin can delete the product at will.",
-    },
-    {
-      id: "4",
-      name: "Doctors Portal",
-      img: "https://i.ibb.co/6N1PVR2/portfolio3.jpg",
-      brand: "A Inventory Manager Website",
-      liveSite: "https://doctors-portal-eedf2.firebaseapp.com/",
-      technology:
-        "html, css, JS, React, Node.js, Stripe, MongoDB, Firebase, Tailwind, JWT Token,Express.js ",
-      description:
-        "This is a clinic-related website. Patients can book an appointment slot once a day. The website is responsive for mobile, tab, and PC. An admin can add any user as an admin. An administrator can also add a doctor. Stripe.js have been used to place payments. Implemented JWT (JSON web token) token to secure the website.Implemented Login and SignUp forms to count users.",
-    },
-  ];
-
   return (
     <>
-      <section className="container mx-auto mt-20 h-screen">
-        <div className="max-w-[1300px] bg-accent rounded-3xl mx-auto">
-          <div className="max-w-[840px] mx-auto py-20">
+      <section className="w-full max-h-full overflow-auto mx-auto p-10">
+        <div className="w-full bg-accent rounded-3xl mx-auto">
+          <div className=" max-w-[1240px] mx-auto py-20">
             <div className="flex justify-center flex-col items-center pb-12">
               <h2 className="uppercase text-5xl font-bold text-center pb-2">my Projects</h2>
               <progress className="progress w-[350px] bg-primary h-[3px]"></progress>
             </div>
-            <div className="grid lg:grid-cols-2 grid-cols-1 gap-10 justify-items-center">
-              {projects.map((project) => (
+            <div className="grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 gap-10 grid-cols-1 xl:gap-y-10 xl:gap-x-5 lg:gap-3  justify-items-center">
+              {portfolios.map((project) => (
                 <ProjectCard key={project?.id} project={project}></ProjectCard>
               ))}
             </div>

@@ -1,8 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaHome, FaUserAlt, FaPoll, FaBriefcase, FaFile, FaEnvelope } from "react-icons/fa";
+import { useState } from "react";
 
 const Sidebar = ({ children }) => {
+  const [hoveredContact, setHoveredContact] = useState(false);
+  const [hoveredHome, setHoveredHome] = useState(false);
+  const [hoveredAbout, setHoveredAbout] = useState(false);
+  const [hoveredServices, setHoveredServices] = useState(false);
+  const [hoveredPortfolio, setHoveredPortfolio] = useState(false);
+  const [hoveredResume, setHoveredResume] = useState(false);
+  const [hoveredBlog, setHoveredBlog] = useState(false);
+
   return (
     <>
       <section className="drawer drawer-mobile">
@@ -10,7 +19,6 @@ const Sidebar = ({ children }) => {
         <div className="drawer-content flex flex-col items-center justify-center">
           {/* <!-- Page content here --> */}
           {children}
-
           <div className="flex-none lg:hidden absolute top-0 right-2">
             <label htmlFor="my-drawer-2" className="btn btn-square btn-ghost">
               <svg
@@ -34,110 +42,153 @@ const Sidebar = ({ children }) => {
           <ul className="menu pt-12 lg:pt-0 overflow-y-auto w-72 bg-[#1E293B] text-base-content">
             {/* <!-- Sidebar content here --> */}
             <div className="hidden lg:block">
-              <div className="lg:h-52 ">
+              <div className="lg:h-48 xl:h-52 ">
                 <div className="h-full flex items-center">
                   <div className="avatar w-full justify-center">
-                    <div className="w-40 rounded-full  ring ring-primary ring-offset-base-100 ring-offset-2">
-                      <img src="https://simgbb.com/avatar/pBSS6n9RBX71.jpg" />
+                    <div className="xl:w-40 lg:w-28 rounded-full  ring ring-primary ring-offset-base-100 ring-offset-2">
+                      <img src="https://simgbb.com/avatar/pBSS6n9RBX71.jpg" alt="my_image" />
                     </div>
                   </div>
                 </div>
               </div>
               <div className="py-4 border-t mb-14  border-b  border-primary">
-                <h1 className="text-center font-bold text-4xl text-secondary hover:text-primary">
+                <h1 className="text-center font-bold text-2xl xl:text-3xl text-secondary">
                   Abdur Rahman
                 </h1>
               </div>
             </div>
-            <li className="px-20 mb-5  ">
+            <li className="px-20 mb-5">
               <NavLink
+                onMouseEnter={() => setHoveredHome(true)}
+                onMouseLeave={() => setHoveredHome(false)}
                 to={"/home"}
                 className={({ isActive }) =>
                   isActive
-                    ? "rounded-lg font-bold  bg-[#111] text-primary"
-                    : "rounded-lg font-bold  bg-[#111] text-secondary hover:text-primary"
+                    ? "rounded-lg relative w-[130px] font-bold  bg-[#111] text-primary"
+                    : "rounded-lg relative w-[130px] font-bold  bg-[#111] text-secondary hover:text-primary"
                 }
               >
-                <FaHome className="text-xl" />{" "}
-                <span className="hover:border-b border-secondary">Home</span>
+                <FaHome className="text-xl" /> <span>Home</span>
+                <span
+                  className={`${
+                    hoveredHome && "btn-animate-hover"
+                  } block btn-animate hover:btn-animate absolute w-12 right-9 bottom-[10px]`}
+                ></span>
               </NavLink>
             </li>
             <li className="px-20 mb-5">
               <NavLink
+                onMouseEnter={() => setHoveredAbout(true)}
+                onMouseLeave={() => setHoveredAbout(false)}
                 to={"/about"}
                 className={({ isActive }) =>
                   isActive
-                    ? "rounded-lg font-bold  bg-[#111] text-primary"
-                    : "rounded-lg font-bold  bg-[#111] text-secondary hover:text-primary"
+                    ? "rounded-lg relative w-[130px] font-bold  bg-[#111] text-primary"
+                    : "rounded-lg relative w-[130px] font-bold  bg-[#111] text-secondary hover:text-primary"
                 }
               >
                 <FaUserAlt className="text-xl" />
-                <span className="hover:border-b border-secondary">About</span>
+                <span>About</span>
+                <span
+                  className={`${
+                    hoveredAbout && "btn-animate-hover"
+                  } block btn-animate hover:btn-animate absolute w-[52px] right-8 bottom-[10px]`}
+                ></span>
               </NavLink>
             </li>
             <li className="px-20 mb-5">
               <NavLink
+                onMouseEnter={() => setHoveredServices(true)}
+                onMouseLeave={() => setHoveredServices(false)}
                 to={"/services"}
                 className={({ isActive }) =>
                   isActive
-                    ? "rounded-lg font-bold  bg-[#111] text-primary"
-                    : "rounded-lg font-bold  bg-[#111] text-secondary hover:text-primary"
+                    ? "rounded-lg relative w-[130px] font-bold  bg-[#111] text-primary"
+                    : "rounded-lg relative w-[130px] font-bold  bg-[#111] text-secondary hover:text-primary"
                 }
               >
-                <FaPoll className="text-xl" />{" "}
-                <span className="hover:border-b border-secondary">Services</span>
+                <FaPoll className="text-xl" /> <span>Services</span>
+                <span
+                  className={`${
+                    hoveredServices && "btn-animate-hover"
+                  } block btn-animate hover:btn-animate absolute w-16 right-5 bottom-[10px]`}
+                ></span>
               </NavLink>
             </li>
             <li className="px-20 mb-5">
               <NavLink
+                onMouseEnter={() => setHoveredPortfolio(true)}
+                onMouseLeave={() => setHoveredPortfolio(false)}
                 to={"/portfolio"}
                 className={({ isActive }) =>
                   isActive
-                    ? "rounded-lg font-bold  bg-[#111] text-primary"
-                    : "rounded-lg font-bold  bg-[#111] text-secondary hover:text-primary"
+                    ? "rounded-lg relative w-[130px] font-bold  bg-[#111] text-primary"
+                    : "rounded-lg relative w-[130px] font-bold  bg-[#111] text-secondary hover:text-primary"
                 }
               >
-                <FaBriefcase className="text-xl" />{" "}
-                <span className="hover:border-b border-secondary">Portfolio</span>
+                <FaBriefcase className="text-xl" /> <span>Portfolio</span>
+                <span
+                  className={`${
+                    hoveredPortfolio && "btn-animate-hover"
+                  } block btn-animate hover:btn-animate absolute w-[68px] right-4 bottom-[10px]`}
+                ></span>
               </NavLink>
             </li>
             <li className="px-20 mb-5">
               <NavLink
+                onMouseEnter={() => setHoveredResume(true)}
+                onMouseLeave={() => setHoveredResume(false)}
                 to={"/resume"}
                 className={({ isActive }) =>
                   isActive
-                    ? "rounded-lg font-bold  bg-[#111] text-primary"
-                    : "rounded-lg font-bold  bg-[#111] text-secondary hover:text-primary"
+                    ? "rounded-lg relative w-[130px] font-bold  bg-[#111] text-primary"
+                    : "rounded-lg relative w-[130px] font-bold  bg-[#111] text-secondary hover:text-primary"
                 }
               >
-                <FaFile className="text-xl" />{" "}
-                <span className="hover:border-b border-secondary">Resume</span>
+                <FaFile className="text-xl" /> <span>Resume</span>
+                <span
+                  className={`${
+                    hoveredResume && "btn-animate-hover"
+                  } block btn-animate hover:btn-animate absolute w-14 right-6 bottom-[10px]`}
+                ></span>
               </NavLink>
             </li>
             <li className="px-20 mb-5">
               <NavLink
+                onMouseEnter={() => setHoveredBlog(true)}
+                onMouseLeave={() => setHoveredBlog(false)}
                 to={"/blog"}
                 className={({ isActive }) =>
                   isActive
-                    ? "rounded-lg font-bold  bg-[#111] text-primary"
-                    : "rounded-lg font-bold  bg-[#111] text-secondary hover:text-primary"
+                    ? "rounded-lg relative w-[130px] font-bold  bg-[#111] text-primary"
+                    : "rounded-lg relative w-[130px] font-bold  bg-[#111] text-secondary hover:text-primary"
                 }
               >
-                <FaFile className="text-xl" />{" "}
-                <span className="hover:border-b border-secondary">Blog</span>
+                <FaFile className="text-xl" /> <span>Blog</span>
+                <span
+                  className={`${
+                    hoveredBlog && "btn-animate-hover"
+                  } block btn-animate hover:btn-animate absolute w-9 right-[46px] bottom-[10px]`}
+                ></span>
               </NavLink>
             </li>
             <li className="px-20 mb-5">
               <NavLink
+                onMouseEnter={() => setHoveredContact(true)}
+                onMouseLeave={() => setHoveredContact(false)}
                 to={"/contact"}
                 className={({ isActive }) =>
                   isActive
-                    ? "rounded-lg font-bold  bg-[#111] text-primary"
-                    : "rounded-lg font-bold  bg-[#111] text-secondary hover:text-primary"
+                    ? "rounded-lg relative w-[130px] font-bold  bg-[#111] text-primary"
+                    : "rounded-lg relative w-[130px] font-bold  bg-[#111] text-secondary hover:btn-animate hover:text-primary"
                 }
               >
-                <FaEnvelope className="text-xl" />{" "}
-                <span className="hover:border-b border-secondary">Contact</span>
+                <FaEnvelope className="text-xl" /> <span>Contact</span>
+                <span
+                  className={`${
+                    hoveredContact && "btn-animate-hover"
+                  } block btn-animate hover:btn-animate absolute w-14 right-6 bottom-[10px]`}
+                ></span>
               </NavLink>
             </li>
           </ul>

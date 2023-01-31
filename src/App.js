@@ -21,22 +21,20 @@ function App() {
   return (
     <div>
       <Sidebar>
-        <div id="container">
-          <Routes>
-            <Route path="/home" element={<Home></Home>}></Route>
-            <Route path="/about" element={<About></About>}></Route>
-            <Route path="/contact" element={<Contact></Contact>}></Route>
-            <Route path="/portfolio" element={<Portfolio></Portfolio>}></Route>
-            <Route path="/blog" element={<Blog></Blog>}></Route>
-            <Route path="/resume" element={<Resume></Resume>}></Route>
-            <Route
-              path="/project-details/:id"
-              element={<PortfolioCardDetails></PortfolioCardDetails>}
-            ></Route>
-            <Route path="/services" element={<Services></Services>}></Route>
-            <Route path="*" element={<Home></Home>}></Route>
-          </Routes>
-        </div>
+        <Routes>
+          <Route path="/home" element={<Home></Home>}></Route>
+          <Route path="/about" element={<About></About>}></Route>
+          <Route path="/contact" element={<Contact></Contact>}></Route>
+          <Route path="/portfolio" element={<Portfolio></Portfolio>}></Route>
+          <Route path="/blog" element={<Blog></Blog>}></Route>
+          <Route path="/resume" element={<Resume></Resume>}></Route>
+          <Route
+            path="/project-details/:id"
+            element={<PortfolioCardDetails></PortfolioCardDetails>}
+          ></Route>
+          <Route path="/services" element={<Services></Services>}></Route>
+          <Route path="*" element={<Home></Home>}></Route>
+        </Routes>
         <Toaster />
       </Sidebar>
     </div>

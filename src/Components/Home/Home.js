@@ -1,38 +1,61 @@
 import React from "react";
-import { FaAngleDown } from "react-icons/fa";
-import About from "../About/About";
-import Portfolio from "../Portfolio/Portfolio";
+import { FaGithub } from "react-icons/fa";
+import { FiLinkedin } from "react-icons/fi";
+import { SiUpwork } from "react-icons/si";
 import "./Home.css";
 
 const Home = () => {
   return (
     <>
-      <section id="home-container" className="container mx-auto mt-20 h-screen">
-        <div className="max-w-[1300px] bg-accent rounded-3xl mx-auto">
-          <div className="hero min-h-screen bg-accent rounded-3xl">
+      <section id="home-container" className="w-full mx-auto p-10 h-screen">
+        <div className="w-full h-full bg-accent rounded-3xl mx-auto">
+          <div className="hero h-full bg-accent rounded-3xl">
             <div className="hero-content flex-col lg:flex-col ">
-              <div className="mt-12 ">
-                <img
-                  src="https://codingindian.com/wp-content/uploads/2022/02/5-Must-have-project-management-skills-for-software-developers.jpg"
-                  className="min-h-[600px]   image-full object-cover rounded-lg shadow-2xl"
-                />
-              </div>
               <div className="">
-                <h1 className="text-5xl  font-bold mt-12 text-center text-secondary">
-                  Abdur Rahman
+                <h1 className="text-5xl font-semibold mt-12 text-center ">
+                  Hi, I'm <span className="text-primary">Abdur Rahman</span>
                 </h1>
-                <p className="py-6 uppercase text-lg text-center font-bold">
-                  I am full <span className="text-primary">stack developer</span>
+                <p className="py-6 text-center text-lg">
+                  I am full stack developer. I can provide clean code and pixel perfect design. I
+                  also make websites more & <br /> more interactive with web animations.
                 </p>
 
-                <div className="flex justify-center ">
-                  <FaAngleDown className="text-5xl downArrow" title="Scroll Down" />
+                <div className="flex justify-center gap-5  ">
+                  <a
+                    href={"https://github.com/abdurrahmancc?tab=repositories"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" w-11 h-11 flex justify-center items-center bg-[#14181f] border-[#7f8083b7] rounded-full border hover:border-primary text-[#a4acc4] hover:text-primary transition ease-linear"
+                  >
+                    <FaGithub className="text-lg" />
+                  </a>
+
+                  <a
+                    href={"https://www.linkedin.com/in/abdur-rahman-2307101a3/"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" w-11 h-11 flex justify-center items-center bg-[#14181f] border-[#7f8083b7] rounded-full border hover:border-primary text-[#a4acc4] hover:text-primary transition ease-linear"
+                  >
+                    <FiLinkedin className="text-lg" />
+                  </a>
+                  <a
+                    href={"https://www.upwork.com/freelancers/~014fe4688cca035972"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className=" w-11 h-11 flex justify-center items-center bg-[#14181f] border-[#7f8083b7] rounded-full border hover:border-primary text-[#a4acc4] hover:text-primary transition ease-linear"
+                  >
+                    <SiUpwork className="text-lg" />
+                  </a>
                 </div>
+                {/* <div className="flex justify-center mt-20">
+                  <Link to={"/about"}>
+                    <FaAngleDown className="text-5xl downArrow" title="scroll down" />
+                  </Link>
+                </div> */}
               </div>
             </div>
           </div>
         </div>
-        <Portfolio></Portfolio>
       </section>
     </>
   );

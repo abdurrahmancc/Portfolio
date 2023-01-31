@@ -9,7 +9,6 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 import "./Contact.css";
-import { useForm } from "react-hook-form";
 import ContactForm from "./ContactForm";
 import style from "./ScrolllBar.module.css";
 import "./ScrolllBar.module.css";
@@ -33,7 +32,7 @@ const Contact = () => {
                 </h4>
                 <div className="ml-10">
                   <p className="py-1">Our friendly team is here to help.</p>
-                  <span className="">abdurrahmancc12@gmail.com</span>
+                  <span className="">programmer.abdurrahman@gmail.com</span>
                 </div>
               </div>
               <div className="py-4">
@@ -52,7 +51,7 @@ const Contact = () => {
                 </h4>
                 <div className="ml-10">
                   <p className="py-1">Mon-Fri from 8am to 5pm</p>
-                  <span>+88098090808098</span>
+                  <span>+8801797001687</span>
                 </div>
               </div>
               <div className="flex justify-center ml-10 absolute bottom-8  gap-4">
