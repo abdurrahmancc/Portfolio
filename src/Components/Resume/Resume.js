@@ -10,7 +10,7 @@ const Resume = () => {
             <object
               width="100%"
               height="100%"
-              className="lg:w-[500px] xl:w-[920px] h-full"
+              className="lg:w-[500px] min-h-[700px] xl:w-[920px] h-full"
               data={file}
               type="application/pdf"
             >

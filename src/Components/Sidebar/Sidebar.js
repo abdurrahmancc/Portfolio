@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaHome, FaUserAlt, FaPoll, FaBriefcase, FaFile, FaEnvelope } from "react-icons/fa";
+import { BsFillChatRightDotsFill } from "react-icons/bs";
 import { useState } from "react";
 
 const Sidebar = ({ children }) => {
@@ -11,6 +12,7 @@ const Sidebar = ({ children }) => {
   const [hoveredPortfolio, setHoveredPortfolio] = useState(false);
   const [hoveredResume, setHoveredResume] = useState(false);
   const [hoveredBlog, setHoveredBlog] = useState(false);
+  const [hoveredSupport, setHoveredSupport] = useState(false);
 
   return (
     <>
@@ -190,6 +192,25 @@ const Sidebar = ({ children }) => {
                   } block btn-animate hover:btn-animate absolute w-14 right-6 bottom-[10px]`}
                 ></span>
               </NavLink>
+            </li>
+            <li className="px-20 mb-5">
+              <a
+                onMouseEnter={() => setHoveredSupport(true)}
+                onMouseLeave={() => setHoveredSupport(false)}
+                href={"https://support-29169.web.app/inbox"}
+                target="_blank"
+                rel="noreferrer"
+                className={
+                  "rounded-lg relative w-[130px] font-bold  bg-[#111] text-secondary hover:btn-animate hover:text-primary"
+                }
+              >
+                <BsFillChatRightDotsFill className="text-xl" /> <span>Support</span>
+                <span
+                  className={`${
+                    hoveredSupport && "btn-animate-hover"
+                  } block btn-animate hover:btn-animate absolute w-14 right-6 bottom-[10px]`}
+                ></span>
+              </a>
             </li>
           </ul>
         </div>
