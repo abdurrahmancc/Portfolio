@@ -1,5 +1,5 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaFacebook, FaGithub } from "react-icons/fa";
 import { FiLinkedin } from "react-icons/fi";
 import { SiUpwork } from "react-icons/si";
 import "./Home.css";
@@ -39,19 +39,14 @@ const Home = () => {
                     <FiLinkedin className="text-lg" />
                   </a>
                   <a
-                    href={"https://www.upwork.com/freelancers/~014fe4688cca035972"}
+                    href={"https://www.facebook.com/mdabdurrahmancc1/"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className=" w-11 h-11 flex justify-center items-center bg-[#14181f] border-[#7f8083b7] rounded-full border hover:border-primary text-[#a4acc4] hover:text-primary transition ease-linear"
                   >
-                    <SiUpwork className="text-lg" />
+                    <FaFacebook className="text-xl" />
                   </a>
                 </div>
-                {/* <div className="flex justify-center mt-20">
-                  <Link to={"/about"}>
-                    <FaAngleDown className="text-5xl downArrow" title="scroll down" />
-                  </Link>
-                </div> */}
               </div>
             </div>
           </div>

@@ -1,4 +1,6 @@
 import eshop from "../assets/e-shopi.png";
+import cookies from "../assets/coockies.png";
+import support from "../assets/support_app.png";
 const portfolios = [
   {
     id: "1",
@@ -39,6 +41,44 @@ const portfolios = [
       "E-Shopi - is a super fast e-commerce template. Built with React, NextJS, TypeScript, Nest JS & Tailwind Css, our template promises to deliver an interface for your business that is quick and easy to set up! also, it is a beautiful, modern, and responsive electronic Store and multipurpose E-commerce template based on React, Next js, Redux, and Tailwind CSS. E-Shopi is specially designed for multipurpose shops like electronic stores, supermarkets, and online stores selling products like Smart Phone, headphones, monitors, computers, laptops, Cameras,s and Smartwatches. Additionally, it is perfect for electronic stores and online shops.",
   },
   {
+    id: "7",
+    name: "Cookies Bakery",
+    img: cookies,
+    brand: "A Independent Service Provider Website",
+    liveSite: "https://cookies-shop.vercel.app/",
+    client: "https://github.com/abdurrahmancc/cookies-shop",
+    server: "",
+    exists: [
+      "02 Awesome Homepage Versions. and 15+ Total Pages.",
+      "Good color combination and Super Clear and Clean Layout.",
+      "The website is responsive for mobile, tab, and PC.",
+      "Implemented Login and SignUp forms to count users.",
+    ],
+    technology:
+      "Next Js, React, Redux toolkit, Tailwind CSS, TypeScript, DaisyUI, Axios, React Query, react-slider, swiper ",
+    description:
+      "Cookies Bakery - Modern eCommerce Template is modern, clean, and professional Template”. It has 2 homepage layouts Options! This template suits any type of eCommerce, Cookie Shop, stores, online shop. Additionally, it is perfect for Cookie Shop and online shops. The design is very easy to customize.",
+  },
+  {
+    id: "8",
+    name: "Support App",
+    img: support,
+    brand: "A Independent Service Provider Website",
+    liveSite: "https://support-29169.web.app/inbox",
+    client: "https://github.com/abdurrahmancc/support",
+    server: "https://github.com/abdurrahmancc/support-server",
+    exists: [
+      "A ticket system has been developed to support the user",
+      "Good color combination and Super Clear and Clean Layout.",
+      "The website is responsive for mobile, tab, and PC.",
+      "Implemented Login and SignUp full functionality",
+    ],
+    technology:
+      "React, Redux, socket.io, Tailwind CSS, TypeScript, DaisyUI, Axios, React Query, react-hook-form, Firebase",
+    description:
+      "This is a ticket system support application. A ticket system has been developed to support the user. If you are working on marketplaces like ThemeForest then you can use it. If any user wants support then you can provide support through this app",
+  },
+  {
     id: "2",
     name: "AWS",
     img: "https://i.ibb.co/cvBLk7K/aws.jpg",
@@ -56,36 +96,6 @@ const portfolios = [
       "React, Node, firebase(authentication), MongoDB, Express, JWT, Tailwind CSS, Daisyui, Axios, React Query",
     description:
       "This is a full-stack responsive AWS project where users can purchase any product. Which is made with React and tailwind CSS. Items of different categories are displayed in the form of grid columns on the home page. The website is responsive for mobile, tab, and PC. Implemented Login and SignUp forms to count users.",
-  },
-  {
-    id: "3",
-    name: "T-COLLECTION",
-    img: "https://i.ibb.co/vBQT6hP/tcollection.jpg",
-    brand: "A Independent Service Provider Website",
-    liveSite: "https://t-collection-eaf74.firebaseapp.com/",
-    exists: [
-      "Items of different categories are displayed in the form of grid columns on the home page.",
-      "It has a dashboard for admin. Where admin can add different products. Also can control everything.",
-      "The website is responsive for mobile, tab, and PC.",
-      "Implemented Login and SignUp forms to count users.",
-    ],
-    technology:
-      "html, css, JS, React, Node.js, Stripe, MongoDB, Firebase, Tailwind, JWT Token,Express.js ",
-    description:
-      "This is a full-stack responsive react project where dealers can buy car tyres. Users can go to the dashboard and pay for or cancel their orders. Only admins see all orders and their payment status in the dashboard. They can also ship paid orders. Admins can make normal users admin and add or delete products.",
-  },
-  {
-    id: "4",
-    name: "CARLE HOUSE",
-    img: "https://i.ibb.co/YTYXqz2/Untitled-2.jpg",
-    brand: "A Inventory Manager Website",
-    liveSite: "https://carle-warehouse.firebaseapp.com/",
-    client: "",
-    server: "",
-    technology:
-      "html, css, JS, React, Node.js, Stripe, MongoDB, Firebase, Tailwind, JWT Token,Express.js ",
-    description:
-      "This is a car warehouse-related website. Here traders or general users can buy cars. They can order each car individually. Admins can also add cars. Admins can see all the car products page. Admin can delete the product at will.",
   },
   {
     id: "5",

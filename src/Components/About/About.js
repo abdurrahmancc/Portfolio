@@ -14,12 +14,18 @@ const skills = [
   { value: 80, name: "TYPESCRIPT" },
   { value: 98, name: "REACT" },
   { value: 100, name: "REDUX" },
-  { value: 85, name: "NODE" },
+  { value: 80, name: "NODE" },
   { value: 95, name: "EXPRESS" },
   { value: 95, name: "MONGOOSE" },
-  { value: 60, name: "NEXT" },
+  { value: 80, name: "NEXT" },
   { value: 100, name: "TAILWIND CSS" },
   { value: 90, name: "BOOTSTRAP" },
+  { value: 90, name: "Material UI" },
+  { value: 60, name: "Vue Js" },
+  { value: 60, name: "Angular Js" },
+  { value: 55, name: "React Native" },
+  { value: 80, name: "Socket.io" },
+  { value: 90, name: "Firebase" },
 ];
 
 const About = () => {

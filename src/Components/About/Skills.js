@@ -7,7 +7,7 @@ const Skills = ({ skill }) => {
       <div style={{ width: 125, height: 125 }}>
         <CircularProgressbar
           value={skill?.value}
-          text={`${skill?.value}%`}
+          text={`${skill?.value >= 80 ? "Expert" : "Familiar"}`}
           styles={buildStyles({
             strokeLinecap: "butt",
             textSize: "16px",

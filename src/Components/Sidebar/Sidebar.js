@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { FaHome, FaUserAlt, FaPoll, FaBriefcase, FaFile, FaEnvelope } from "react-icons/fa";
 import { BsFillChatRightDotsFill } from "react-icons/bs";
 import { useState } from "react";
+import img from "../../assets/AbdurRahman.png";
 
 const Sidebar = ({ children }) => {
   const [hoveredContact, setHoveredContact] = useState(false);
@@ -48,7 +49,7 @@ const Sidebar = ({ children }) => {
                 <div className="h-full flex items-center">
                   <div className="avatar w-full justify-center">
                     <div className="xl:w-40 lg:w-28 rounded-full  ring ring-primary ring-offset-base-100 ring-offset-2">
-                      <img src="https://simgbb.com/avatar/pBSS6n9RBX71.jpg" alt="my_image" />
+                      <img src={img} alt="my_image" />
                     </div>
                   </div>
                 </div>
