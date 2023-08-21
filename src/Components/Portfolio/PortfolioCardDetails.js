@@ -61,7 +61,7 @@ const PortfolioCardDetails = () => {
                       href={project?.liveSite}
                       target="_blank"
                       rel="noreferrer"
-                      className="px-10 text-center py-2 text-secondary bg-[rgb(30,41,59)] "
+                      className={`px-10 text-center py-2 text-secondary bg-[rgb(30,41,59)] ${project?.liveSite ? '' : 'hidden'} `}
                     >
                       <span className="flex justify-center items-center">
                         <FaVideo />
@@ -70,7 +70,7 @@ const PortfolioCardDetails = () => {
                     </a>
                     <a
                       href={project?.client}
-                      className="px-8 text-center py-2 text-secondary bg-[rgb(30,41,59)] "
+                      className={`px-8 text-center py-2 text-secondary bg-[rgb(30,41,59)] ${project?.client ? '' : 'hidden'}`}
                     >
                       <span className="flex justify-center items-center">
                         <FaGithub />
@@ -79,7 +79,7 @@ const PortfolioCardDetails = () => {
                     </a>
                     <a
                       href={project?.server}
-                      className="px-8 text-center py-2 text-secondary bg-[rgb(30,41,59)] "
+                      className={`px-8 text-center py-2 text-secondary bg-[rgb(30,41,59)] ${project?.server ? '' : 'hidden'}`}
                     >
                       <span className="flex justify-center items-center">
                         <FaGithub />
