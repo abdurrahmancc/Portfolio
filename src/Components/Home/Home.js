@@ -16,13 +16,14 @@ const Home = () => {
                   Hi, I'm <span className="text-primary">Abdur Rahman</span>
                 </h1>
                 <p className="py-6 text-center text-lg">
-                  I am full stack developer. I can provide clean code and pixel perfect design. I
-                  also make websites more & <br /> more interactive with web animations.
+                  Full Stack Developer with 3+ years of professional experience specializing in .NET Core, React, Next.js,
+                  Node.js, Vue, and Angular. Committed to delivering high-quality, cost-effective web solutions with a strong
+                  focus on Quality, Clear Communication, and Integrity.
                 </p>
 
                 <div className="flex justify-center gap-5  ">
                   <a
-                    href={"https://github.com/abdurrahmancc?tab=repositories"}
+                    href={"https://github.com/abdurrahmancc"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className=" w-11 h-11 flex justify-center items-center bg-[#14181f] border-[#7f8083b7] rounded-full border hover:border-primary text-[#a4acc4] hover:text-primary transition ease-linear"
@@ -31,7 +32,7 @@ const Home = () => {
                   </a>
 
                   <a
-                    href={"https://www.linkedin.com/in/abdur-rahman-2307101a3/"}
+                    href={"https://www.linkedin.com/in/abdurrahmancc/"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className=" w-11 h-11 flex justify-center items-center bg-[#14181f] border-[#7f8083b7] rounded-full border hover:border-primary text-[#a4acc4] hover:text-primary transition ease-linear"

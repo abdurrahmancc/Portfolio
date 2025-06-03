@@ -10,6 +10,12 @@ import { Link } from "react-router-dom";
 const skills = [
   { value: 100, name: "HTML" },
   { value: 100, name: "CSS" },
+  { value: 80, name: ".NET Core" },
+  { value: 100, name: ".Razor Pages" },
+  { value: 70, name: "C#" },
+  { value: 70, name: "MYSQL" },
+  { value: 70, name: "MSSQL" },
+  { value: 70, name: "PostgreSQL" },
   { value: 90, name: "JAVASCRIPT" },
   { value: 80, name: "TYPESCRIPT" },
   { value: 98, name: "REACT" },
@@ -26,6 +32,8 @@ const skills = [
   { value: 55, name: "React Native" },
   { value: 80, name: "Socket.io" },
   { value: 90, name: "Firebase" },
+  { value: 90, name: "SEO" },
+  { value: 90, name: "Google Ads" },
 ];
 
 const About = () => {
@@ -50,8 +58,9 @@ const About = () => {
                     I am <span className="text-primary">Abdur Rahman</span>
                   </h3>
                   <p className=" pb-4 text-lg">
-                    I am full stack developer. I can provide clean code and pixel perfect design. I
-                    also make websites more & more interactive with web animations.
+                    Full Stack Developer with 3+ years of professional experience specializing in .NET Core, React, Next.js,
+                    Node.js, Vue, and Angular. Committed to delivering high-quality, cost-effective web solutions with a strong
+                    focus on Quality, Clear Communication, and Integrity.
                   </p>
                   <Introduction />
                   <div className="flex justify-start mt-5">

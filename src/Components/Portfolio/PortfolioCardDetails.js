@@ -69,7 +69,7 @@ const PortfolioCardDetails = () => {
                       </span>
                     </a>
                     <a
-                      href={project?.client}
+                      href={project?.client} target="_blank"
                       className={`px-8 text-center py-2 text-secondary bg-[rgb(30,41,59)] ${project?.client ? '' : 'hidden'}`}
                     >
                       <span className="flex justify-center items-center">
@@ -78,7 +78,7 @@ const PortfolioCardDetails = () => {
                       </span>
                     </a>
                     <a
-                      href={project?.server}
+                      href={project?.server} target="_blank"
                       className={`px-8 text-center py-2 text-secondary bg-[rgb(30,41,59)] ${project?.server ? '' : 'hidden'}`}
                     >
                       <span className="flex justify-center items-center">

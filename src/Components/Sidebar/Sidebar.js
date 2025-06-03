@@ -42,10 +42,10 @@ const Sidebar = ({ children }) => {
         </div>
         <div className="drawer-side">
           <label htmlFor="my-drawer-2" className="drawer-overlay"></label>
-          <ul className="menu pt-12 lg:pt-0 overflow-y-auto w-72 bg-[#1E293B] text-base-content">
+          <ul className="menu flex-nowrap pt-12 lg:pt-0 overflow-y-auto w-72 bg-[#1E293B] text-base-content">
             {/* <!-- Sidebar content here --> */}
-            <div className="hidden lg:block">
-              <div className="lg:h-48 xl:h-52 ">
+            <li  className="hidden lg:block">
+              <div className="lg:h-48 xl:h-52 justify-center ">
                 <div className="h-full flex items-center">
                   <div className="avatar w-full justify-center">
                     <div className="xl:w-40 lg:w-28 rounded-full  ring ring-primary ring-offset-base-100 ring-offset-2">
@@ -59,7 +59,7 @@ const Sidebar = ({ children }) => {
                   Abdur Rahman
                 </h1>
               </div>
-            </div>
+            </li >
             <li className="px-20 mb-5">
               <NavLink
                 onMouseEnter={() => setHoveredHome(true)}

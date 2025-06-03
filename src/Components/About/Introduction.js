@@ -41,11 +41,6 @@ const Introduction = () => {
             <Td className="px-5">:</Td>
             <Td>+8801797001687</Td>
           </Tr>
-          <Tr>
-            <Td className="font-semibold">Freelance</Td>
-            <Td className="px-5">:</Td>
-            <Td>Available</Td>
-          </Tr>
         </Tbody>
       </Table>
     </>

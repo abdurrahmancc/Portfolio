@@ -3,10 +3,12 @@ import cookies from "../assets/coockies.png";
 import support from "../assets/support_app.png";
 import jobdesk from "../assets/jobdesk.png";
 import dashboard from "../assets/dashboard.png";
+import jobdesk_enterprise from "../assets/jobdesk_enterprise.png";
+import DBSchemaUpdateTool from "../assets/DBSchemaUpdateTool.png";
 const portfolios = [
   {
     id: "1",
-    name: "JOBDESK",
+    name: "Jobdesk® Home App",
     img: jobdesk,
     brand: "An Recruiter Service Provider Website",
     liveSite: "https://jobdesk.com/",
@@ -25,8 +27,66 @@ const portfolios = [
       "This is the official website of a jobdesk. and 'jobdesk.com' is a legitimate website related to job search, career information, or any other job-related services. this platform provides job listings, career resources, and networking opportunities for job seekers.",
   },
   {
+    id: "9",
+    name: "Jobdesk® Enterprise",
+    img: jobdesk_enterprise,
+    brand: "An HR tool in .NET Core 8 for managing candidates and reports via Syncfusion",
+    liveSite: "https://jdentapi.jobdesk.com/",
+    client: "",
+    server: "",
+    exists: [
+      "Candidate Profile Management",
+      "Interview Scheduling & Attendance Tracking.",
+      "Dynamic Reporting with Syncfusion",
+
+    ],
+    technology:
+      ".NET 8 MVC, MySQL, MSSQL, Bootstrap, HTML5, CSS, JavaScript, jQuery, AJAX etc.",
+    description: "Jobdesk® Enterprise is an advanced HR management tool built with .NET Core 8. It streamlines candidate tracking, interview scheduling, and dynamic reporting using Syncfusion. Designed for efficiency and clarity, it helps HR teams manage end-to-end recruitment workflows seamlessly.",
+  },
+  {
+    id: "10",
+    name: "DBSchemaUpdateTool",
+    img: DBSchemaUpdateTool,
+    brand: "WinForms-based .NET 8 tool for SQL schema comparison and script generation",
+    liveSite: "",
+    client: "https://github.com/abdurrahmancc/dbschemaupdatetool",
+    server: "",
+    exists: [
+      "Schema Comparison Engine",
+      "Auto-Generated SQL Scripts.",
+      "Migration-Free & Manual Control",
+      "Anchor Object Tracking",
+      "Multi-Database Support",
+
+    ],
+    technology:
+      ".NET 8 WinForms, C#, MySQL, JSON Config.",
+    description: "DBSchemaUpdateTool is a precision-driven schema management utility built with .NET Core 8. It enables seamless schema comparison, auto-generates SQL scripts, and supports both MySQL and MSSQL. With anchor object tracking and full manual control without migrations, it ensures safe and efficient database updates across multiple environments."
+  },
+  {
+    id: "11",
+    name: "Excel Add-in Tool",
+    img: "",
+    brand: "VSTO-based Excel Add-in for anonymizing and validating candidate data",
+    liveSite: "",
+    client: "https://github.com/abdurrahmancc/Excelimportdatacleaner",
+    server: "",
+    exists: [
+      "Email, Phone Number, and Name Anonymization",
+      "Invalid Email and Date Detection with Cleanup",
+      "Max Row Limiting (Keeps only Top 100)",
+      "Recruiters/Data Handlers",
+      "Performance-focused (preventing bloat, simplifying validation)"
+
+    ],
+    technology:
+      "C#, .NET Framework, VSTO, Excel Interop, WinForms, Regex, File I/O",
+    description: "The Excel Add-in Tool is a specialized VSTO-based extension designed for HR and recruitment data processing. It anonymizes sensitive fields like email, phone numbers, and names to ensure privacy, while detecting and cleaning invalid emails and improperly formatted dates. With built-in logic to retain only the top 100 rows, it prevents file bloat and ensures data relevance. Tailored for recruiters and data handlers, the tool simplifies large dataset validation directly within Excel."
+  },
+  {
     id: "2",
-    name: "JDPUI",
+    name: "Jobdesk® PLACE",
     img: dashboard,
     brand: "An Recruiter Service Provider Website",
     liveSite: "https://sas.jobdesk.com/",
