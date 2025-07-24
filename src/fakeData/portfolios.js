@@ -5,6 +5,7 @@ import jobdesk from "../assets/jobdesk.png";
 import dashboard from "../assets/dashboard.png";
 import jobdesk_enterprise from "../assets/jobdesk_enterprise.png";
 import DBSchemaUpdateTool from "../assets/DBSchemaUpdateTool.png";
+import Courierly from "../assets/Courierly.png";
 const portfolios = [
   {
     id: "1",
@@ -43,6 +44,22 @@ const portfolios = [
     technology:
       ".NET 8 MVC, MySQL, MSSQL, Bootstrap, HTML5, CSS, JavaScript, jQuery, AJAX etc.",
     description: "Jobdesk® Enterprise is an advanced HR management tool built with .NET Core 8. It streamlines candidate tracking, interview scheduling, and dynamic reporting using Syncfusion. Designed for efficiency and clarity, it helps HR teams manage end-to-end recruitment workflows seamlessly.",
+  },
+  {
+    id: "12",
+    name: "Courierly",
+    img: Courierly,
+    brand: "Courierly is a full-stack multi-role Parcel Management System for managing and tracking parcel bookings and deliveries efficiently.",
+    liveSite: "https://courierly.web.app/login",
+    client: "https://github.com/abdurrahmancc/Courierly",
+    server: "https://github.com/abdurrahmancc/Courierly-server",
+    exists: [
+      "We have implemented fully dynamic role-based dashboards",
+      "Real-time notifications optimized using Socket.IO",
+      "Comprehensive parcel management with multi-role access.",
+    ],
+    technology: "Node.js, Express, MongoDB, Mongoose, JWT, Socket.IO, React, Tailwind CSS, DaisyUI",
+    description: "Courierly is a full-stack parcel management web application built for admins, customers, and delivery agents. It enables easy parcel booking, real-time tracking, and efficient delivery management through dynamic dashboards and notifications."
   },
   {
     id: "10",
